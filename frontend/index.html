@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat App with Rooms</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Join Screen -->
+  <div id="joinScreen" class="box">
+    <h2>Join Chat</h2>
+    <input id="username" placeholder="Enter username" />
+    <input id="room" placeholder="Enter room name" />
+    <button onclick="joinChat()">Join</button>
+  </div>
+
+  <!-- Chat Screen -->
+  <div id="chatScreen" class="box" style="display:none;">
+    <h2>Chat Room</h2>
+    <div id="chatBox"></div>
+    <input id="messageInput" placeholder="Type message..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
